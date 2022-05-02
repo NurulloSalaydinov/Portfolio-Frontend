@@ -12,35 +12,47 @@
 <body>
     
     <section id="home" class="home">
-        <nav class="navbar">
-            <div class="brand">
-                <h1>Python Dev</h1>
-            </div>
-            <div class="navbar-end-items">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="button contact">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="navbar">
+                <div class="brand">
+                    <h1>Python Dev</h1>
+                </div>
+                <div class="navbar-end-items">
+                    <ul>
+                        <li class="close"
+                        onclick="
+                            document.querySelector('.navbar-end-items').classList.remove('active')
+                        ">
+                            <i class="fa-solid fa-times"></i>
+                        </li>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="button-contact">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-arrow-left-to-line menu-button-navbar" 
+                onclick="
+                    document.querySelector('.navbar-end-items').classList.add('active')
+                "></i>
+            </nav>
+        </div>
         <div class="container">
             
             <div class="line">
                 <div class="lines position-relative">
-                    <div class="align-justify-center direction-column">
+                    <div class="direction-column text-center-mobile">
                         <h1 class="home-title">
                             Hi I’m
                             <br>
@@ -48,6 +60,8 @@
                             <br>
                             Full Stack Developer
                         </h1>
+                        <br>
+                        <br>
                         <div class="social-links">
                             <a href="https://instagram.com/pythondevuz/" target="_blank">
                                 <i class="fa-brands fa-instagram"></i>
@@ -62,6 +76,8 @@
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </div>
+                        <br>
+                        <br>
                     </div>
                 </div>
                 <div class="lines">

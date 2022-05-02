@@ -1,0 +1,94 @@
+/* THIS IS DEFAULT CSS */
+
+/* Container */
+
+.container {
+    width: 99%;
+    margin: auto;
+}
+
+/* end Container */
+
+/* Lines */
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lines {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* end Lines */
+
+/* media */
+
+@media screen and (max-width: 768px) {
+    .line {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+/* end media */
+
+
+/* mixins */
+
+.align-justify-center {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-fluid {
+    width: 80%;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}

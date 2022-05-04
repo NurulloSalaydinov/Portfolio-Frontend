@@ -1,5 +1,10 @@
 /* THIS IS DEFAULT CSS */
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+
 /* Container */
 
 .container {
@@ -30,6 +35,10 @@
 /* media */
 
 @media screen and (max-width: 768px) {
+    .home {
+        height: auto !important;
+        padding-bottom: 50px;
+    }
     .line {
         flex-direction: column;
     }
@@ -94,4 +103,56 @@
 
 .mt-3 {
     margin-top: 30px;
+}
+
+.rotate-360 {   
+    transform: rotate(180deg)
+}
+
+.swiper {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    margin-top: -70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.lemon {
+    font-family: 'Lemon', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 63px;
+}
+
+@media screen and (max-width: 412px) {
+    .home-title {
+        font-size: 33px !important;
+    }
+    .lemon {
+        font-size: 30px;
+    }
+    .mt-5 {
+        margin-top: 20px;
+    }
+    .swiper .swiper-pagination .swiper-pagination-bullet {
+        width: 30px;
+        height: 5px;
+    }
 }

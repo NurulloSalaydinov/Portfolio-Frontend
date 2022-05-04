@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
 
 * {
     margin: 0;
@@ -11,7 +18,6 @@
 .home {
     width: 100%;
     height: 100vh;
-    overflow: auto;
     background: conic-gradient(from 180deg at 50% 14.97%, #4CE9DF 0deg, #2F958F 360deg);
 }
 
@@ -30,6 +36,7 @@
     font-size: 40px;
     font-style: normal;
     line-height: 55px;
+    text-decoration: none;
     font-family: 'Lily Script One', cursive;
 }
 
@@ -94,7 +101,7 @@
         align-items: center;
         transition: all 0.7s;
         justify-content: center;
-        transform: translateX(100%);
+        transform: translateX(110%);
         background: rgba(0,0,0,0.6);
     }
     .navbar-end-items.active {
@@ -133,9 +140,17 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .navbar-end-items ul {
         width: 90%;
+    }
+    .img-200-250 {
+        width: 150px !important;
+        height: 200px !important;
+    }
+    .img-250-250 {
+        width: 200px !important;
+        height: 200px !important;
     }
 }
 
@@ -160,3 +175,34 @@
 .social-links a:hover > i {
     transform: scale(1.15)
 }
+
+/* skill */
+
+.skills {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(from 90deg at 50% 50%, #006CA9 -59.87deg, #001B3C 119.11deg, #006CA9 300.13deg, #001B3C 479.11deg);
+}
+
+.skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-200-250 {
+    width: 175px;
+    height: 225px;
+}
+
+.img-250-250 {
+    width: 225px;
+    height: 225px;
+}
+
+/* <!-- 
+        https://daxshat.net/26117-birinchi-qasoskor-2-kapitan-amerika-2-ozbek-tilida-hd.html
+    --> */

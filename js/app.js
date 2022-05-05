@@ -44,8 +44,7 @@ const swiper = new Swiper('.swiper', {
   const scroller = new LocomotiveScroll({
     el: document.querySelector("#scrollContainer"),
     smooth: true,
-    multiplier: 2000,
-    lerp: 1.6
+    multiplier: 1000,
    
 });
 

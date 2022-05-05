@@ -45,6 +45,10 @@ html {
     .text-center-mobile {
         text-align: center;
     }
+    .rubber-animation {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -127,6 +131,10 @@ html {
 
 .text-light {
     color: #fff;
+}
+
+.text-green {
+    color: var(--green);
 }
 
 .mt-5 {

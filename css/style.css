@@ -170,13 +170,22 @@ body {
 
 .rubber-animation {
     display: flex;
-    font-size: 35px;
+    align-items: center;
     letter-spacing: 3px;
     margin-bottom: -50px;
+    justify-content: start;
 }
 
-.rubber-animation span {
+.letter-img {
+    margin-left: -55px;
+    margin-right: -45px;
+    margin-top: -15px;
+    margin-bottom: -40px;
+}
+
+.rubber-animation span:hover {
     cursor: pointer;
+    color: var(--green);
 }
 
 .typing {

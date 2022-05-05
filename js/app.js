@@ -59,16 +59,22 @@ var typed = new Typed('.typing', {
   backSpeed: 50,
 })
 
-var rubber = document.querySelectorAll('.rubber-animation span');
+var rubber = document.querySelectorAll('.rubber-animation > span');
+var rubber_img = document.querySelector('.rubber-animation > img');
+
+rubber_img.addEventListener('mouseover', () => {
+  rubber_img.setAttribute('style', 'animation-duration: 1s;animation-name: rubberBand;')
+  setTimeout(() => {
+    rubber_img.removeAttribute('style')
+  }, 1000)
+})
 
 rubber.forEach(elem => {
   elem.addEventListener('mouseover', () => {
     elem.setAttribute('style', 'animation-duration: 1s;animation-name: rubberBand;')
-
     setTimeout(() => {
       elem.removeAttribute('style')
     }, 1000)
-
   })
 })
 

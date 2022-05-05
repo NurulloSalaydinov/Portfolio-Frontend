@@ -1,52 +1,92 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 4,
-    slidesPerGroup: 4,
-    breakpoints: {
-      280: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
-      },
-      600: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        slidesPerGroup: 2,
-      },
-      1115: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-        slidesPerGroup: 4,
-      }
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      slidesPerGroup: 1,
     },
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+    1115: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      slidesPerGroup: 4,
+    }
+  },
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
 
-  const scroller = new LocomotiveScroll({
-    el: document.querySelector("#scrollContainer"),
-    smooth: true,
-    multiplier: 1000,
-   
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 });
 
 
-  console.log('no bugs found');
+const scroller = new LocomotiveScroll({
+  el: document.querySelector("#scrollContainer"),
+  smooth: true,
+  multiplier: 1000,
+
+});
+
+var typed = new Typed('.typing', {
+  strings: [
+    'Full Stack Developer',
+    'Python Developer',
+    'Javascript Developer',
+  ],
+  loop: true,
+  typeSpeed: 50,
+  backSpeed: 50,
+})
+
+var rubber = document.querySelectorAll('.rubber-animation span');
+
+rubber.forEach(elem => {
+  elem.addEventListener('mouseover', () => {
+    elem.setAttribute('style', 'animation-duration: 1s;animation-name: rubberBand;')
+
+    setTimeout(() => {
+      elem.removeAttribute('style')
+    }, 1000)
+
+  })
+})
+
+const container = '.tagcloud';
+const texts = [
+    '3D', 'TagCloud', 'JavaScript',
+    'CSS3', 'Animation', 'Interactive',
+    'Mouse', 'Rolling', 'Sphere',
+    '6KB', 'v2.x',
+];
+const options = {
+  radius: 230,
+  maxSpeed: 'fast',
+  initSpeed: 'fast',
+  direction: 135,
+  keep: true
+};
+
+TagCloud(container, texts, options);
+
+console.log('no bugs found');

@@ -177,10 +177,11 @@ body {
 }
 
 .letter-img {
-    margin-left: -55px;
-    margin-right: -45px;
+    cursor: pointer;
     margin-top: -15px;
+    margin-right: -45px;
     margin-bottom: -40px;
+    margin-left: -55px;
 }
 
 .rubber-animation span:hover {

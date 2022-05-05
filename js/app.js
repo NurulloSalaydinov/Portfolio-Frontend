@@ -50,9 +50,10 @@ const scroller = new LocomotiveScroll({
 
 var typed = new Typed('.typing', {
   strings: [
-    'Full Stack Developer',
+    'Web Developer',
     'Python Developer',
     'Javascript Developer',
+    'UI | UIX Designer',
   ],
   loop: true,
   typeSpeed: 50,

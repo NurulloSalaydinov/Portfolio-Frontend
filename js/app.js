@@ -2,6 +2,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  grabCursor: true,
   slidesPerView: 4,
   slidesPerGroup: 4,
   breakpoints: {
@@ -41,12 +42,12 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-const scroller = new LocomotiveScroll({
-  el: document.querySelector("#scrollContainer"),
-  smooth: true,
-  multiplier: 1000,
+// const scroller = new LocomotiveScroll({
+//   el: document.querySelector("#scrollContainer"),
+//   smooth: true,
+//   multiplier: 1000,
 
-});
+// });
 
 var typed = new Typed('.typing', {
   strings: [

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurullo | Portfolio</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+
+    
+</head>
+<body>
+
+    <div data-scroll-container="''" class="scrollcontainer" id="scrollContainer">
+
+
+        <section id="home" class="home scroll-section" data-scroll-section="''">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="brand">
+                        <a href="/">
+                            Python Dev
+                        </a>
+                    </div>
+                    <div class="navbar-end-items">
+                        <ul>
+                            <li class="close"
+                            onclick="
+                                document.querySelector('.navbar-end-items').classList.remove('active')
+                            ">
+                                <i class="fa-solid fa-times"></i>
+                            </li>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="button-contact">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-arrow-left-to-line menu-button-navbar" 
+                    onclick="
+                        document.querySelector('.navbar-end-items').classList.add('active')
+                    "></i>
+                </nav>
+            </div>
+            <div class="container">
+    
+                <div class="line">
+                    <div class="lines position-relative">
+                        <div class="direction-column text-center-mobile">
+                            <h1 class="home-title">
+                                Hi <span class="text-green">I’m</span>
+                                <br>
+                                <div class="rubber-animation">
+                                    <img src="img/N.png" class="letter-img" width="150px" height="150px" alt="">
+                                    <span>U</span>
+                                    <span>R</span>
+                                    <span>U</span>
+                                    <span>L</span>
+                                    <span>L</span>
+                                    <span>O</span>
+                                    <!-- Nurullo Salaydinov -->
+                                </div>
+                                <br>
+                                <span class="typing"></span>
+                                <!-- Full Stack Developer -->
+                            </h1>
+                            <br>
+                            <br>
+                            <div class="social-links">
+                                <a href="https://instagram.com/pythondevuz/" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/nurullo-salaydinov-1424a8232/" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=100070768625278" target="_blank">
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                </a>
+                                <a href="https://github.com/NurulloSalaydinov" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="lines">
+                        <div class="align-justify-center mt-3">
+                            <img src="img/banner_image.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    
+        <section id="skills" class="skills direction-column scroll-section" data-scroll-section="''">
+            <h1 class="mt-5 text-light lemon">
+                Skills
+            </h1>
+            <div class="container">
+                <div class="swiper container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/html.png" alt="" class="img-200-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/css.png" alt="" class="img-200-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/javascript.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/python.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/bootstrap.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/bulma.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/tailwind.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/materialize.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/vue.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/three.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/vuetify.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/django.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="align-justify-center">
+                                <img src="img/postgres.png" alt="" class="img-250-250">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+    
+    
+        </section>
+
+
+    </div>
+    
+    
+    <script src="js/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="js/tagcloud.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.4/dist/locomotive-scroll.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

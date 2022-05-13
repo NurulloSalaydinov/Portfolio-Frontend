@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --green: #005c53;
+}
+
+::-webkit-scrollbar {
+    width: 0.50rem;
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: grab;
+    border-radius: 20px;
+    background: var(--green);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: conic-gradient(from 180deg at 50% 14.97%, #4CE9DF 0deg, #2F958F 360deg);
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+    align-items: center;
+}
+
+.brand > * {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 55px;
+    text-decoration: none;
+    font-family: 'Lily Script One', cursive;
+}
+
+.navbar-end-items {
+    right: 0;
+    position: absolute;
+}
+
+.navbar-end-items ul li {
+    padding: 6px 18px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.navbar-end-items ul li:hover {
+    transform: scale(1.15)
+}
+
+.navbar-end-items ul li a {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.navbar-end-items ul li.button-contact {
+    padding: 6px 14.5px 6px 12px;
+    border-radius: 10px;
+    background: var(--green);
+}
+
+.navbar-end-items ul li.close {
+    display: none;
+}
+
+.menu-button-navbar {
+    right: 20px;
+    display: none;
+    color: var(--white);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 8px 12px;
+    position: absolute;
+    border-radius: 10px;
+    background: var(--green);
+}
+
+@media screen and (max-width: 1115px) {
+    .navbar {
+        padding: 20px;
+    }
+    .navbar-end-items {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1111;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        transition: all 0.7s;
+        justify-content: center;
+        transform: translateX(110%);
+        background: rgba(0,0,0,0.6);
+    }
+    .navbar-end-items.active {
+        transform: translateX(0)
+    }
+    .navbar-end-items ul {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar-end-items ul li {
+        width: 300px;
+        display: block;
+        margin: 12px 0;
+        cursor: pointer;
+        text-align: center;
+        background: var(--white);
+        border-radius: 10px;
+    }
+    .navbar-end-items ul li a {
+        color: var(--black);
+    }
+    .navbar-end-items ul li:hover {
+        transform: scale(0.90)
+    }
+    .navbar-end-items ul li.close {
+        font-size: 22px;
+        display: block;
+    }
+    .menu-button-navbar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-end-items ul {
+        width: 90%;
+    }
+    .img-200-250 {
+        width: 150px !important;
+        height: 200px !important;
+    }
+    .img-250-250 {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
+.home-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 56px;
+    color: var(--white);
+}
+
+.rubber-animation {
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    margin-bottom: -50px;
+    justify-content: start;
+}
+
+.letter-img {
+    cursor: pointer;
+    margin-top: -15px;
+    margin-right: -45px;
+    margin-bottom: -40px;
+    margin-left: -55px;
+}
+
+.rubber-animation span:hover {
+    cursor: pointer;
+    color: var(--green);
+}
+
+.typing {
+    color: var(--green)
+}
+
+.typed-cursor {
+    color: var(--green)
+}
+
+/* rubber animation */
+
+@keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        -ms-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        -ms-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        -ms-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        -ms-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        -ms-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.social-links {
+    font-size: 40px;
+}
+
+.social-links a {
+    margin: 0 6px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--green)
+}
+
+.social-links a:hover > i {
+    transform: scale(1.15)
+}
+
+/* skill */
+
+.skills {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(from 90deg at 50% 50%, #006CA9 -59.87deg, #001B3C 119.11deg, #006CA9 300.13deg, #001B3C 479.11deg);
+}
+
+.skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-200-250 {
+    width: 175px;
+    height: 225px;
+}
+
+.img-250-250 {
+    width: 225px;
+    height: 225px;
+}
+
+.tagcloud {
+    color: orange;
+    font-size: 30px;
+}
+
+/* <!-- 
+        https://daxshat.net/26117-birinchi-qasoskor-2-kapitan-amerika-2-ozbek-tilida-hd.html
+    --> */

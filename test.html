@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazed From Online Tutorial's Payment Course</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            box-sizing: border-box;
+        }
+
+        .blocks {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        /* hexagon */
+        
+        .blocks .block {
+            display: inline-block;
+            width: 9.8%;
+            height: 80px;
+            background-color: #222;
+            position: relative;
+        }
+        .indicator {
+            z-index: -1;
+            width: 100px;
+            height: 100px;
+            display: none;
+            background: #6c6;
+            position: absolute;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+
+    <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
+    <div class="indicator"></div>
+
+    <script>
+        window.history.pushState('', 'New Page Title', '/');
+        var indicator = document.querySelector('.indicator');
+        // console.log(document.location.pathname)
+        document.addEventListener('mousemove', (e) => {
+            let x = e.clientX
+            let y = e.clientY
+            indicator.style.display = 'block';
+            indicator.style.top = `${y - y / 5}px`;
+            indicator.style.left = `${x - x / 5}px`;
+        })
+        console.log(window)
+    </script>
+
+</body>
+
+</html>

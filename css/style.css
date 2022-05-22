@@ -15,6 +15,31 @@ body {
     background: var(--gray);
 }
 
+/* Sections */
+
+.section-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 11111;
+    position: fixed;
+    background: #000;
+    transition: all 0.5s;
+    transform: translateY(100%);
+}
+
+/* end */
+
+section#home.home {
+    position: relative;
+}
+
+
+
+/* end sections */
+
+
 canvas {
     top: 0;
     left: 0;
@@ -74,9 +99,10 @@ canvas {
 .download-btn {
     margin: 20px 0;
     font-size: 0.3em;
+    overflow: hidden;
+    z-index: 11111111;
     padding: 10px 50px;
     position: relative;
-    overflow: hidden;
     text-decoration: none;
     background: transparent;
     color: var(--navigation-color);
@@ -170,6 +196,9 @@ canvas {
         font-size: 2.5em;
         font-weight: 900
     }
+    .rubber span.blast {
+        -webkit-text-stroke: 2px var(--navigation-color)
+    }
 }
 
 @media (max-width: 486px) {
@@ -177,6 +206,10 @@ canvas {
         cursor: default;
         font-size: 2em;
         font-weight: 900
+    }
+    .download-btn {
+        padding: 8px 30px;
+        font-size: 0.4em;
     }
 }
 
@@ -187,6 +220,14 @@ canvas {
     .type, .typed-cursor {
         cursor: default;
         font-size: 0.7em;
+        font-weight: 900
+    }
+}
+
+@media (max-width: 376px) {
+    .banner-font {
+        cursor: default;
+        font-size: 1.5em;
         font-weight: 900
     }
 }

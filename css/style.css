@@ -17,7 +17,19 @@ body {
 
 /* Sections */
 
-.section-wrapper {
+.section {
+    width: 100%;
+    height: 100vh;
+    transition: 1.7s;
+    overflow: hidden;
+}
+
+.section.hiding {
+    transform: translate(-50%, -50%);
+    height: 0;
+}
+
+.section-loader {
     top: 0;
     left: 0;
     width: 100%;
@@ -25,15 +37,24 @@ body {
     z-index: 11111;
     position: fixed;
     background: #000;
-    transition: all 0.5s;
+    transition: all 1.5s;
     transform: translateY(100%);
+    box-shadow: 10px 3px 25px 15px var(--navigation-color);
+}
+
+.section-loader.section-loader-2 {
+    transform: translateY(-100%)
+}
+
+.section-loader.active {
+    transform: translateY(50%);
+}
+
+.section-loader.section-loader-2.active {
+    transform: translateY(-50%);
 }
 
 /* end */
-
-section#home.home {
-    position: relative;
-}
 
 
 

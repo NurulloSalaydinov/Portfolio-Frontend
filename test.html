@@ -54,7 +54,7 @@
 <body>
 
     <div class="blocks">
-        <div class="block"></div>
+        <div class="block" onclick="testRouter()">Click me to push router</div>
         <div class="block"></div>
         <div class="block"></div>
         <div class="block"></div>
@@ -122,7 +122,12 @@
     <div class="indicator"></div>
 
     <script>
-        window.history.pushState('', 'New Page Title', '/');
+        
+        function testRouter() {
+            window.history.pushState('', 'New Page Title', '/test-router');
+            console.log(document.location.pathname)
+        }
+
         var indicator = document.querySelector('.indicator');
         // console.log(document.location.pathname)
         document.addEventListener('mousemove', (e) => {

@@ -1,22 +1,11 @@
-initCanvas();
-initBlast();
-initType();
+import { initSection } from './section.js'
+import { initCanvas } from './canvas.js'
+import { initBlast } from './rubber.js'
+import { initType } from './initType.js'
+import { addActiveClass } from './navigation.js'
 
-document.querySelectorAll('.list').forEach(elem=> {
-    elem.addEventListener('click', preloader)
-})
-
-function preloader() {
-    document.querySelectorAll('.section-loader').forEach(e => {
-        e.classList.add('active')
-        setTimeout(() => {
-            e.classList.remove('active')
-        }, 1700)
-    })
-    document.querySelectorAll('.section').forEach(e => {
-        e.classList.add('hiding')
-        setTimeout(() => {
-            e.classList.remove('hiding')
-        }, 1700)
-    })
-}
+addActiveClass(); // add active class to list of navigation
+initCanvas(); // Start Canvas
+initBlast(); // Start blast animation
+initType(); // Start Typing animation
+initSection(); // Activate Section

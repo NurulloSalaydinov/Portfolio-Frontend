@@ -11,4 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initType(); // Start Typing animation
     initSection(); // Activate Section
     document.querySelector('.loader').style.opacity = '0';
+    setTimeout(() => {
+        document.querySelector('.loader').style.display = 'none';
+    }, 600)
 });

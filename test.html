@@ -1,5 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test For My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            cursor: none;
+            box-sizing: border-box;
+        }
+        .content {
+            width: 100%;
+            height: 100vh;
+            color: #000;
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .indicator {
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+            border-radius: 40px;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="content">
+            <div class="indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="visual" viewBox="0 0 900 600" width="400" height="400" version="1.1">
+                    <g transform="translate(454.3320640187036 293.7427403164311)">
+                        <path fill="#ffffff" d="M84.3 -147.7C111.3 -130.5 136.6 -112 157 -87.2C177.3 -62.3 192.6 -31.2 195.5 1.7C198.4 34.5 188.8 69 168.2 93.4C147.6 117.7 116 131.9 86.1 147.7C56.3 163.4 28.1 180.7 -4.7 188.8C-37.5 197 -75 195.9 -104.4 179.9C-133.9 163.9 -155.3 133 -173.7 100.5C-192.1 68 -207.6 34 -204.2 1.9C-200.9 -30.2 -178.8 -60.3 -156.2 -85.4C-133.5 -110.6 -110.3 -130.6 -84.1 -148.4C-58 -166.1 -29 -181.6 -0.2 -181.3C28.7 -181 57.3 -165 84.3 -147.7" fill="#aad"/>
+                    </g>
+                </svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vel molestiae cum quia architecto earum, unde iusto itaque odio quas sit eos libero ullam delectus! Dicta reiciendis repellendus debitis. Sunt aspernatur harum ex accusamus odit, quis sapiente. Explicabo reprehenderit numquam excepturi rerum incidunt unde. Quia nemo aspernatur porro at corporis.</p>
+        </div>
+    </section>
+
+    <script>
+        var indicator = document.querySelector('.indicator');
+        // console.log(document.location.pathname)
+        document.body.addEventListener('mousemove', (e) => {
+            let x = e.clientX
+            let y = e.clientY
+            indicator.style.display = 'block';
+            indicator.style.top = `${y-200}px`;
+            indicator.style.left = `${x-200}px`;
+        })
+    </script>
+    
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -142,4 +205,4 @@
 
 </body>
 
-</html>
+</html> -->

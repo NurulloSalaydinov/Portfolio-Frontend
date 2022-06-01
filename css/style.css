@@ -9,7 +9,7 @@
     font-family: 'Lemon', cursive;
 }
 
-h1,h3,h3,h4,h5,h6 {margin: 0 !important}
+h1,h3,h3,h4,h5,h6,p,span,ul,li {margin: 0 !important;max-width: 90%;}
 
 body {
     width: 100%;
@@ -103,7 +103,7 @@ body {
     height: auto;
     z-index: 11111;
     position: fixed;
-    background: #000;
+    background: var(--gray);
     transition: all 1.5s;
     transform: translateY(100vh);
     box-shadow: 10px 3px 25px 15px var(--navigation-color);
@@ -111,6 +111,13 @@ body {
 
 
 /* end sections */
+
+.box {
+    background: var(--gray);
+    color: #fff;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(60, 60, 60);
+}
 
 
 canvas {
@@ -123,6 +130,10 @@ canvas {
 
 .h-100vh {
     height: 100vh;
+}
+
+.mt--top {
+    margin-top: -80px;
 }
 
 .banner-font {
@@ -208,6 +219,24 @@ canvas {
     height: 180%;
 }
 
+.about-me-ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 0px 12px;
+    position: relative;
+    border-left: 2px solid #fff;
+}
+
+.about-me-ul li:nth-child(2) {
+    padding: 40px 12px;
+}
+
+.about-me-ul li::before {
+    left: -12px;
+    content: "⚪";
+    position: absolute;
+}
+
 @keyframes rubberBand {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -261,6 +290,21 @@ canvas {
     .rubber span {
         font-size: 1em;
     }
+    .about-title {
+        font-size: 1.5em;
+    }
+    .about-subtitle {
+        font-size: 1.1em;
+    }
+    .about-me-ul {
+        left: -20px;
+    }
+    .about-me-ul li::before {
+        content: "";
+    }
+    .about-me-ul li {
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 576px) {
@@ -294,6 +338,15 @@ canvas {
         cursor: default;
         font-size: 0.7em;
         font-weight: 900
+    }
+    .about-title {
+        font-size: 1.2em;
+    }
+    .about-subtitle {
+        font-size: 0.9em;
+    }
+    .about-me-ul li {
+        font-size: 0.6em;
     }
 }
 

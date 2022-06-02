@@ -224,7 +224,9 @@ canvas {
     font-size: 16px;
     padding: 0px 12px;
     position: relative;
+    /* color: transparent; */
     border-left: 2px solid #fff;
+    /* -webkit-text-stroke: 0.5px var(--white) */
 }
 
 .about-me-ul li:nth-child(2) {
@@ -235,6 +237,16 @@ canvas {
     left: -12px;
     content: "⚪";
     position: absolute;
+}
+
+.about-title {
+    color: transparent !important;
+    -webkit-text-stroke: 1px var(--white)
+}
+
+.about-subtitle {
+    color: transparent !important;
+    -webkit-text-stroke: 0.7px var(--white)
 }
 
 @keyframes rubberBand {

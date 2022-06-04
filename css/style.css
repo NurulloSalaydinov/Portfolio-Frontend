@@ -15,10 +15,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-span,
-ul,
-li {
+p {
     margin: 0 !important;
     max-width: 90%;
 }

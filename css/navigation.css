@@ -44,10 +44,7 @@
     color: #000;
 }
 .navigation ul li.active a .icon {
-    transform: translateX(-48.5px) translateY(-3px)
-}
-.navigation ul li.active a .icon .fa-regular.fa-home {
-    transform: translateX(-1.5px) translateY(0px)
+    transform: translateX(-63px) translateY(-3px)
 }
 .navigation ul li a .text {
     position: absolute;
@@ -113,6 +110,7 @@
     .navigation ul li a .icon {
         font-size: 1.2em;
         font-weight: bold;
+        margin-right: -17px;
     }
     .navigation ul li a .text {
         display: none;

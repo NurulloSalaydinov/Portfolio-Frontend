@@ -15,10 +15,16 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
 
-
+    <style>
+        :root {
+            --navigation-color: rebeccapurple
+        }
+    </style>
 </head>
 
 <body>
+
+    <div id="root" root="rebeccapurple"></div>
 
     <div class="loader">
         <span></span>
@@ -194,7 +200,12 @@
     </section> -->
 
     <canvas id="canvas"></canvas>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("dom content loaded")
+            document.getElementById("root").attributes['root'].nodeValue = '#fff'
+        });
+    </script>
     <script src="js/typed.js"></script>
     <script type="module" src="js/app.js"></script>
 

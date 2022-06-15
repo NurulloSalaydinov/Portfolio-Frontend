@@ -17,7 +17,7 @@
 
     <style>
         :root {
-            --navigation-color: rebeccapurple
+            --navigation-color: cyan
         }
     </style>
 </head>
@@ -202,8 +202,9 @@
     <canvas id="canvas"></canvas>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            console.log("dom content loaded")
-            document.getElementById("root").attributes['root'].nodeValue = '#fff'
+            let color = document.querySelector("style").innerText.slice(49).replace('}', '')
+            // console.log(color)
+            document.getElementById("root").attributes['root'].nodeValue = color
         });
     </script>
     <script src="js/typed.js"></script>

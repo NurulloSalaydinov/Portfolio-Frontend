@@ -44,13 +44,13 @@
     color: #000;
 }
 .navigation ul li.active a .icon {
-    transform: translateX(-59px) translateY(-3px)
+    transform: translateX(-59px) translateY(0px)
 }
 .navigation ul li a .text {
     position: absolute;
     color: var(--gray);
     font-weight: 900;
-    font-size: 0.7em;
+    font-size: 0.6em;
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;

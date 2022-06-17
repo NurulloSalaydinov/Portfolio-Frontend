@@ -117,7 +117,8 @@
         height: 70px;
     }
     .navigation ul li.active a .icon {
-        transform: translateY(-3px)
+        transform: translateY(3px);
+        padding-right: 1px;
     }
     .indicator {
         left: 0;

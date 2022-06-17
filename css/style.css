@@ -20,6 +20,10 @@ p {
     max-width: 90%;
 }
 
+.text-light {
+    color: #fff;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -275,107 +279,36 @@ canvas {
     position: relative;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.pt-3 {
+    padding-top: 30px;
+}
+
+.pb-3 {
+    padding-bottom: 30px;
+}
+
 @media (max-width: 608px) {
     .circular-progress {
         width: 100px;
         height: 100px;
     }
 }
-
-/* .skill {
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    position: relative;
-    background: var(--navigation-color)
-}
-
-.skill .outer {
-    width: 160px;
-    height: 160px;
-    padding: 20px;
-    border-radius: 50%;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.6),
-                -6px -6px 10px -1px rgba(0, 0, 0, 0.3)
-}
-
-.skill .outer .inner {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.6),
-                inset -4px -4px 6px -1px rgba(0, 0, 0, 0.3),
-                -0.5px -0.5px 0px rgba(0, 0, 0, 1),
-                -0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
-                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-}
-
-#number {
-    color: #fff;
-}
-
-.skill svg {
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-.skill svg circle {
-    fill: none;
-    stroke-linecap: butt;
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    transition: all 0.5s;
-    stroke: url(#GradientColor);
-}
-
-@media (max-width: 420px) {
-    .skill, .skill svg, .skill .outer {
-        width: 100px;
-        height: 100px;
-    }
-    .skill svg circle {
-        stroke-width: 15px;
-        cx: 50;
-        cy: 50;
-        r: 40;
-    }
-    .skill .outer .inner {
-        width: 60px;
-        height: 60px;
-    }
-    
-} */
-
-/* .animate-skill svg circle {
-    animation-name: anim;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation: anim 2s linear forwards;
-} */
-
-
-/* @keyframes anim {
-    100% {
-        stroke-dashoffset: progress-count;
-    }
-} */
-
-/* .about-title {
-    color: transparent !important;
-    -webkit-text-stroke: 1px var(--white)
-}
-
-.about-subtitle {
-    color: transparent !important;
-    -webkit-text-stroke: 0.7px var(--white)
-} */
 
 @keyframes rubberBand {
     0% {
@@ -508,6 +441,33 @@ canvas {
         cursor: default;
         font-size: 1.5em;
         font-weight: 900
+    }
+}
+
+/* container */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
     }
 }
 

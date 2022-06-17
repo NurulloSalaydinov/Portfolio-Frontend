@@ -32,7 +32,7 @@
     align-items: center;
     text-align: center;
     font-weight: 600;
-    margin-right: 40px;
+    margin-right: -20px;
 }
 .navigation ul li a .icon {
     position: relative;
@@ -44,7 +44,7 @@
     color: #000;
 }
 .navigation ul li.active a .icon {
-    transform: translateX(-63px) translateY(-3px)
+    transform: translateX(-59px) translateY(-3px)
 }
 .navigation ul li a .text {
     position: absolute;
@@ -62,7 +62,7 @@
 }
 .indicator {
     position: absolute;
-    left: -50%;
+    left: -70%;
     top: 0;
     width: 70px;
     height: 70px;
@@ -100,12 +100,9 @@
     .navigation {
         width: 63px
     }
-    .navigation ul li {
-        right: 9px;
-    }
     .navigation ul li a {
         margin-top: -4px;
-        margin-right: 80px;
+        margin-right: 3px;
     }
     .navigation ul li a .icon {
         font-size: 1.2em;

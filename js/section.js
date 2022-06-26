@@ -20,7 +20,7 @@ let initSection = () => {
                         let progressValue = 0;
                         let progressEndValue = parseInt(e.getAttribute("data-end-percent"));
                         let speed = 15;
-        
+
                         let progress = setInterval(() => {
                             progressValue++;
                             e.style.background = `conic-gradient(
@@ -32,7 +32,7 @@ let initSection = () => {
                             }
                         }, speed);
                     });
-    
+
                 }, 950)
 
             };

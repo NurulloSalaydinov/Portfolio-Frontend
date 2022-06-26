@@ -133,6 +133,64 @@ body {
     box-shadow: 10px 3px 25px 15px var(--navigation-color);
 }
 
+section#home::before {
+    right: 150px;
+    font-size: 110px;
+    color: transparent;
+    position: absolute;
+    content: "😎";
+    -webkit-text-stroke: 2px #000;
+}
+
+section#about-me::before {
+    font-size: 110px;
+    color: transparent;
+    position: absolute;
+    content: "About me🙋‍♂️";
+    -webkit-text-stroke: 2px #000;
+}
+
+section#skills::before {
+    bottom: 20px;
+    font-size: 110px;
+    color: transparent;
+    position: absolute;
+    content: "My Skills💪";
+    -webkit-text-stroke: 2px #000;
+}
+
+section#work::before {
+    top: -10px;
+    right: 180px;
+    z-index: 11;
+    font-size: 90px;
+    color: transparent;
+    position: absolute;
+    content: "What did I❓";
+    -webkit-text-stroke: 2px #000;
+}
+
+section#blog::before {
+    top: 10px;
+    left: 40px;
+    z-index: 11;
+    font-size: 130px;
+    color: transparent;
+    position: absolute;
+    content: "Blogs⚽️";
+    -webkit-text-stroke: 2px #000;
+}
+
+section#contact::before {
+    top: 10px;
+    left: 40px;
+    z-index: 11;
+    font-size: 110px;
+    color: transparent;
+    position: absolute;
+    content: "Contact me🤙";
+    -webkit-text-stroke: 2px #000;
+}
 
 /* end sections */
 
@@ -142,7 +200,6 @@ body {
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -15px -15px 30px rgb(60, 60, 60);
 }
-
 
 canvas {
     top: 0;
@@ -299,7 +356,9 @@ canvas {
     width: 100%;
     height: 100%;
     display: flex;
+    overflow: hidden;
     position: relative;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -307,7 +366,8 @@ canvas {
 .work-img img {
     width: 100%;
     height: auto;
-    min-height: 200px
+    min-height: 200px;
+    transition: all 0.7s;
 }
 
 .work-img .background {
@@ -317,6 +377,7 @@ canvas {
     height: 100%;
     z-index: 1111;
     position: absolute;
+    transition: all 0.7s;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -331,6 +392,7 @@ canvas {
     border-radius: 50%;
     position: absolute;
     align-items: center;
+    transition: all 0.7s;
     text-decoration: none;
     justify-content: center;
     background: var(--navigation-color);
@@ -338,6 +400,14 @@ canvas {
 
 .work-img:hover .content {
     transform: scale(1);
+}
+
+.work-img:hover .background {
+    transform: scale(0);
+}
+
+.work-img:hover img {
+    transform: scale(1.25);
 }
 
 .responsive-col {
@@ -354,9 +424,11 @@ canvas {
     .responsive-col {
         width: 95%;
     }
+
     .work-img {
         height: auto;
     }
+
     .work-img img {
         width: 100%;
         height: 150px;
@@ -510,6 +582,7 @@ canvas {
     .about-me-ul li {
         font-size: 0.8em;
     }
+
     .work-img .content {
         width: 80px;
         height: 80px;

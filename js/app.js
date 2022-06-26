@@ -1,8 +1,18 @@
-import { initSection } from './section.js';
-import { initCanvas } from './canvas.js';
-import { initBlast } from './rubber.js';
-import { initType } from './initType.js';
-import { addActiveClass } from './navigation.js';
+import {
+    initSection
+} from './section.js';
+import {
+    initCanvas
+} from './canvas.js';
+import {
+    initBlast
+} from './rubber.js';
+import {
+    initType
+} from './initType.js';
+import {
+    addActiveClass
+} from './navigation.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     addActiveClass(); // add active class to list of navigation

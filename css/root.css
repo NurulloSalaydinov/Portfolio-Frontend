@@ -3,4 +3,54 @@
     --white: rgb(255, 255, 255);
     --gray: rgb(34, 35, 39);
     --navigation-color: rgb(0, 255, 255);
+    --blue: blue;
+    --red: red;
+    --yellow: yellow;
+    --orange: orange;
+    --hover: #08fdd8;
+    --green: green;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-hover:hover {
+    color: var(--hover);
+}
+
+.border-top-blue {
+    border-top: 3px solid var(--blue);
+}
+
+.border-top-red {
+    border-top: 3px solid var(--red);
+}
+
+.border-top-yellow {
+    border-top: 3px solid var(--yellow);
+}
+
+.border-top-orange {
+    border-top: 3px solid var(--orange);
+}
+
+.border-top-green {
+    border-top: 3px solid var(--green);
 }

@@ -7,7 +7,6 @@ const activateSlider = (elem_attr) => {
         elem.parentNode.prepend(cloned_elem);
         elem.parentNode.removeChild(elem);
     });
-    set
 };
 
 export {
